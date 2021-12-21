@@ -1,15 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-   
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7e40c58055.js" crossorigin="anonymous"></script>
     <style>
-#nav {
+      
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        .card-container{
+            background-color: rgba(206, 206, 206, 0.089);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 903px;
+            margin: 0 1rem;
+            color: rgb(117, 117, 117);
+        }
+        .row-top{
+            display: flex;
+            margin-bottom: 1rem;
+            align-items: baseline;
+        }
+        .content-col{
+            min-width: 75%;
+            padding-right: 1rem;
+        }
+        .row-bottom{
+            display: flex;
+            margin-top: 1rem;
+            align-items: center;
+        }
+        .article{
+            display: -webkit-box;
+            width: 100%;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .detail-item{
+            font-size: 0.8rem; 
+        }
+        .title{
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: black;
+        }
+        .description{
+            font-size: 1.05;
+            margin: 0.5rem 0;
+        }
+        .detail-item{
+            margin-right: 2px;
+        }
+        .div-icons{
+            color: black;
+            margin: 0 0 0 auto;
+        }
+        .row-top img{
+            margin-right: 10px;
+        }
+        .img-col{
+            width: 100%;
+        }
+        .highlight{
+            border: none;
+            border-radius: 100px;
+            background-color: rgb(242, 242, 242);
+            line-height: 20px;
+            padding: 4px 12px;
+        }
+        .author-name{
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: black;
+        }
+        .dot{
+            font-size: 9px;
+            padding: 0 4px;
+        }
+        .history{
+            text-overflow: ellipsis;
+        }
+      #nav {
 
     background-color: rgba(255, 255, 255, 1);
     height: 68px;
@@ -144,12 +222,11 @@ left: -100px;
 }
 
     </style>
-
-    <title>Medium</title>
-  </head>
-  <body>
-
-    <nav class="navbar navbar-expand-md " id="nav">
+    <title>Document</title>
+</head>
+<body>
+    
+      <nav class="navbar navbar-expand-md " id="nav">
 
         <div id="svgDiv">
         <a class="myA" href="#"><svg width="160" height="25px" viewBox="0 0 512 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
@@ -169,6 +246,31 @@ left: -100px;
         </ul>
         </div>
       </nav>
+  
+  
+    <div class="card-container">
+        <div class="content-col">
+            <div class="row-top">
+                <img class="logo-sm" src="https://miro.medium.com/fit/c/20/20/1*bPddtCe8_0Zq8-pF6YhmGw.jpeg" alt="artist logo">
+                <p class="author-name">Claudiu</p>
+            </div>
+            <p class="article title">What Banks Don't Want You To Know About Why Bitcoin Hasn't Crashed Yet</p>
+            <p class="article description">When you look at bitcoin's history, it's mind-boggling. what began as a small project has grown to be worth more than a trillion dollars.</p>
+            <div class="row-bottom">
+                <div class="detail-item">Dec 8</div><div class="dot">•</div>
+                <div class="detail-item">6 min read</div><div class="dot">•</div>
+                <button class="detail-item highlight">Investing</button><div class="dot">•</div>
+                <div class="detail-item history">Based on your reading history</div>
+                <div class="div-icons">
+                    <i class="far fa-bookmark"></i>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+        </div>
+        <img class="img-col" src="https://miro.medium.com/fit/c/200/134/0*BRKku3UJo7v_7Y85" alt="bitcoin with trading chart background">
+    </div>
+
+  
 
 <div class="vertical">
 
@@ -210,6 +312,7 @@ left: -100px;
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
      
+
 
 </body>
 </html>
