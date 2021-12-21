@@ -1,1 +1,90 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7e40c58055.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .card-container{
+            background-color: rgba(206, 206, 206, 0.089);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 903px;
+            margin: 0 1rem;
+        }
+        .row-top{
+            display: flex;
+            margin-bottom: 1rem;
+        }
+        .content-col{
+            min-width: 80%;
+            padding-right: 1rem;
+        }
+        .row-bottom{
+            display: flex;
+            margin-top: 1rem;
+        }
+        .article{
+            display: -webkit-box;
+            width: 100%;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .detail-item{
+            font-size: 0.8rem; 
+        }
+        .title{
+            font-size: 1.25rem;
+            font-weight: 800;
+        }
+        .description{
+            font-size: 1.05;
+            margin: 0.5rem 0;
+        }
+        .detail-item{
+            margin-right: 2px;
+        }
+        .div-icons{
+            margin: 0 0 0 auto;
+        }
+        .row-top img{
+            margin-right: 10px;
+        }
+        .img-col{
+            width: 100%;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="card-container">
+        <div class="content-col">
+            <div class="row-top">
+                <img class="logo-sm" src="https://miro.medium.com/fit/c/20/20/1*bPddtCe8_0Zq8-pF6YhmGw.jpeg" alt="artist logo">
+                <div id="author-name">Claudiu</div>
+            </div>
+            <p class="article title">What Banks Don't Want You To Know About Why Bitcoin Hasn't Crashed Yet</p>
+            <p class="article description">When you look at bitcoin's history, it's mind-boggling. what began as a small project has grown to be worth more than a trillion dollars.</p>
+            <div class="row-bottom">
+                <div class="detail-item">Dec 8 •</div>
+                <div class="detail-item">6 min read •</div>
+                <div class="detail-item highlight">Investing •</div>
+                <div class="detail-item">Based on your reading history</div>
+                <div class="div-icons">
+                    <i class="far fa-bookmark"></i>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+        </div>
+        <img class="img-col" src="https://miro.medium.com/fit/c/200/134/0*BRKku3UJo7v_7Y85" alt="bitcoin with trading chart background">
+    </div>
+</body>
+</html>
