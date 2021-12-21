@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
         .card-container{
             background-color: rgba(206, 206, 206, 0.089);
@@ -18,18 +19,21 @@
             align-items: center;
             max-width: 903px;
             margin: 0 1rem;
+            color: rgb(117, 117, 117);
         }
         .row-top{
             display: flex;
             margin-bottom: 1rem;
+            align-items: baseline;
         }
         .content-col{
-            min-width: 80%;
+            min-width: 75%;
             padding-right: 1rem;
         }
         .row-bottom{
             display: flex;
             margin-top: 1rem;
+            align-items: center;
         }
         .article{
             display: -webkit-box;
@@ -44,6 +48,7 @@
         .title{
             font-size: 1.25rem;
             font-weight: 800;
+            color: black;
         }
         .description{
             font-size: 1.05;
@@ -53,6 +58,7 @@
             margin-right: 2px;
         }
         .div-icons{
+            color: black;
             margin: 0 0 0 auto;
         }
         .row-top img{
@@ -60,6 +66,25 @@
         }
         .img-col{
             width: 100%;
+        }
+        .highlight{
+            border: none;
+            border-radius: 100px;
+            background-color: rgb(242, 242, 242);
+            line-height: 20px;
+            padding: 4px 12px;
+        }
+        .author-name{
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: black;
+        }
+        .dot{
+            font-size: 9px;
+            padding: 0 4px;
+        }
+        .history{
+            text-overflow: ellipsis;
         }
     </style>
     <title>Document</title>
@@ -69,15 +94,15 @@
         <div class="content-col">
             <div class="row-top">
                 <img class="logo-sm" src="https://miro.medium.com/fit/c/20/20/1*bPddtCe8_0Zq8-pF6YhmGw.jpeg" alt="artist logo">
-                <div id="author-name">Claudiu</div>
+                <p class="author-name">Claudiu</p>
             </div>
             <p class="article title">What Banks Don't Want You To Know About Why Bitcoin Hasn't Crashed Yet</p>
             <p class="article description">When you look at bitcoin's history, it's mind-boggling. what began as a small project has grown to be worth more than a trillion dollars.</p>
             <div class="row-bottom">
-                <div class="detail-item">Dec 8 •</div>
-                <div class="detail-item">6 min read •</div>
-                <div class="detail-item highlight">Investing •</div>
-                <div class="detail-item">Based on your reading history</div>
+                <div class="detail-item">Dec 8</div><div class="dot">•</div>
+                <div class="detail-item">6 min read</div><div class="dot">•</div>
+                <button class="detail-item highlight">Investing</button><div class="dot">•</div>
+                <div class="detail-item history">Based on your reading history</div>
                 <div class="div-icons">
                     <i class="far fa-bookmark"></i>
                     <i class="fas fa-ellipsis-h"></i>
