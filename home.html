@@ -9,9 +9,9 @@
     <style>
       
         *{
-            /* margin: 0;
+            margin: 0;
             padding: 0;
-            box-sizing: border-box; */
+            box-sizing: border-box;
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
         .card-container{
@@ -21,7 +21,6 @@
             align-items: center;
             max-width: 903px;
             margin: 0 1rem;
-            color: rgb(117, 117, 117);
         }
         .row-top{
             display: flex;
@@ -49,8 +48,6 @@
         }
         .title{
             font-size: 1.25rem;
-            font-weight: 800;
-            color: black;
         }
         .description{
             font-size: 1.05;
@@ -78,8 +75,6 @@
         }
         .author-name{
             font-size: 0.8rem;
-            font-weight: bold;
-            color: black;
         }
         .dot{
             font-size: 9px;
@@ -96,8 +91,22 @@
             justify-content: center;
             align-items: center;
         }
-        .recommended-items p{
+        .bold{
             font-weight: bold;
+            color: black;
+        }
+        .heading{
+            max-width: 100%;
+            display: flex;
+            padding: 80px 0 0 0;
+            border-bottom: 1px solid rgb(117, 117, 117);
+            margin: 0 14px 40px 14px;
+            align-items: center;
+        }
+        .heading span{
+            font-size: 1.1rem;
+            margin: 0 18px 8px 0;
+            letter-spacing: 1px;
         }
       #nav {
 
@@ -107,8 +116,6 @@
     padding-left: 0px;
     box-shadow: 6px 6px 10px rgb(245, 244, 244);
     width: 100%;
-    
-
 }
 
 svg{
@@ -263,13 +270,17 @@ left: -100px;
     <div class="container">
         <div class="row">
             <div class="col-lg-9">
+                <div class="heading">
+                    <span>Following</span>
+                    <span class="bold">Recommended for you</span>
+                </div>
                 <div class="card-container">
                     <div class="content-col">
                         <div class="row-top">
                             <img class="logo-sm" src="https://miro.medium.com/fit/c/20/20/1*bPddtCe8_0Zq8-pF6YhmGw.jpeg" alt="author logo">
                             <p class="author-name">Claudiu</p>
                         </div>
-                        <p class="article title">What Banks Don't Want You To Know About Why Bitcoin Hasn't Crashed Yet</p>
+                        <p class="article title bold">What Banks Don't Want You To Know About Why Bitcoin Hasn't Crashed Yet</p>
                         <p class="article description">When you look at bitcoin's history, it's mind-boggling. what began as a small project has grown to be worth more than a trillion dollars.</p>
                         <div class="row-bottom">
                             <div class="detail-item">Dec 8</div><div class="dot">•</div>
@@ -288,9 +299,9 @@ left: -100px;
                     <div class="content-col">
                         <div class="row-top">
                             <img class="logo-sm" src="https://cdn-images-1.medium.com/fit/c/36/36/1*UF0GCDhD8lBNGIrPbFfM4A.png" alt="author logo">
-                            <p class="author-name">Jenn Leach <span>in</span>The Side Hustle Club</p>
+                            <p class="author-name bold">Jenn Leach <span>in </span>The Side Hustle Club</p>
                         </div>
-                        <p class="article title">I Made $100,000 Flipping Websites</p>
+                        <p class="article title bold">I Made $100,000 Flipping Websites</p>
                         <p class="article description">Website flipping was something I stumbled onto several years back. I was looking to exit my business that helped me quit my 9-to-5 job and move into a new industry.</p>
                         <div class="row-bottom">
                             <div class="detail-item">Nov 11</div><div class="dot">•</div>
@@ -308,14 +319,35 @@ left: -100px;
                 <div class="card-container">
                     <div class="content-col">
                         <div class="row-top">
-                            <img class="logo-sm" src="https://miro.medium.com/fit/c/20/20/1*TyRLQdZO7NdPATwSeut8gg.png" alt="artist logo">
-                            <p class="author-name">Jose Granja <span>in</span> Better Programming</p>
+                            <img class="logo-sm" src="https://miro.medium.com/fit/c/56/56/1*7t15Zc8v9ysnlfxCjugQ_w.jpeg" alt="artist logo">
+                            <p class="author-name bold">Jessica Wildfire</p>
                         </div>
-                        <p class="article title">Will JetBrains Fleet Be a VSCode Killer?</p>
+                        <p class="article title bold">It's Hard to Describe What's About to happen in America</p>
+                        <p class="article description">We're woefully unprepared.</p>
+                        <div class="row-bottom">
+                            <div class="detail-item">Dec 20</div><div class="dot">•</div>
+                            <div class="detail-item">6 min read</div><div class="dot">•</div>
+                            <button class="detail-item highlight">Life</button><div class="dot">•</div>
+                            <div class="detail-item history">Based on your reading history</div>
+                            <div class="div-icons">
+                                <i class="far fa-bookmark"></i>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="img-col" src="https://miro.medium.com/max/7200/1*38GjxJ_dQRx4uCuUQ7UQ2g.jpeg" alt="abstract art">
+                </div>
+                <div class="card-container">
+                    <div class="content-col">
+                        <div class="row-top">
+                            <img class="logo-sm" src="https://miro.medium.com/fit/c/20/20/1*TyRLQdZO7NdPATwSeut8gg.png" alt="artist logo">
+                            <p class="author-name bold">Jose Granja <span>in</span> Better Programming</p>
+                        </div>
+                        <p class="article title bold">Will JetBrains Fleet Be a VSCode Killer?</p>
                         <p class="article description">My first impressions of the new JetBrains tool</p>
                         <div class="row-bottom">
-                            <div class="detail-item">Dec 8</div><div class="dot">•</div>
-                            <div class="detail-item">6 min read</div><div class="dot">•</div>
+                            <div class="detail-item">Dec 6</div><div class="dot">•</div>
+                            <div class="detail-item">6#4 min read</div><div class="dot">•</div>
                             <button class="detail-item highlight">Programming</button><div class="dot">•</div>
                             <div class="detail-item history">Based on your reading history</div>
                             <div class="div-icons">
@@ -360,13 +392,13 @@ left: -100px;
                     </button></div>
 
                     <div class="recommended-items">
-                        <p>Recommended topics</p>
+                        <p class="bold">Recommended topics</p>
                         <button class="highlight rec-item">Education</button>
                         <button class="highlight rec-item">Psychology</button>
                         <button class="highlight rec-item">Books</button>
                         <button class="highlight rec-item">Health</button>
                         <button class="highlight rec-item">Blockchain</button>
-                        <button class="highlight rec-item">Art</button>
+                        <button class="highlight rec-item">Writing</button>
 
 
                     </div>
