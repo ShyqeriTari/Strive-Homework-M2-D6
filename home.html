@@ -9,9 +9,9 @@
     <style>
       
         *{
-            margin: 0;
+            /* margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            box-sizing: border-box; */
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
         .card-container{
@@ -87,6 +87,17 @@
         }
         .history{
             text-overflow: ellipsis;
+        }
+        .rec-item{
+            display: inline-flex;
+            margin: .38rem .4rem;
+            font-size: 14px;
+            padding: 0.68rem;
+            justify-content: center;
+            align-items: center;
+        }
+        .recommended-items p{
+            font-weight: bold;
         }
       #nav {
 
@@ -227,7 +238,7 @@ left: -100px;
 </head>
 <body>
     
-      <!-- <nav class="navbar navbar-expand-md " id="nav">
+      <nav class="navbar navbar-expand-md " id="nav">
 
         <div id="svgDiv">
         <a class="myA" href="#"><svg width="160" height="25px" viewBox="0 0 512 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
@@ -239,23 +250,23 @@ left: -100px;
         <div id="navUl">
         <ul id="thisUL" class="nav ">
             <span id="search"><svg width="25px"  xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Search</title><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"/></svg></span>
-            <span id="search"><svg width= "25px" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Bookmarks</title><path d="M128 80V64a48.14 48.14 0 0148-48h224a48.14 48.14 0 0148 48v368l-80-64" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><path d="M320 96H112a48.14 48.14 0 00-48 48v352l152-128 152 128V144a48.14 48.14 0 00-48-48z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/></svg></span>
+            <span id="search"><svg width= "25px" xmlns="http://www.w3.org/2000/svg" class="io nicon" viewBox="0 0 512 512"><title>Bookmarks</title><path d="M128 80V64a48.14 48.14 0 0148-48h224a48.14 48.14 0 0148 48v368l-80-64" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><path d="M320 96H112a48.14 48.14 0 00-48 48v352l152-128 152 128V144a48.14 48.14 0 00-48-48z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/></svg></span>
             <span id="search"><svg width="25px" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Notifications</title><path d="M427.68 351.43C402 320 383.87 304 383.87 217.35 383.87 138 343.35 109.73 310 96c-4.43-1.82-8.6-6-9.95-10.55C294.2 65.54 277.8 48 256 48s-38.21 17.55-44 37.47c-1.35 4.6-5.52 8.71-9.95 10.53-33.39 13.75-73.87 41.92-73.87 121.35C128.13 304 110 320 84.32 351.43 73.68 364.45 83 384 101.61 384h308.88c18.51 0 27.77-19.61 17.19-32.57zM320 384v16a64 64 0 01-128 0v-16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg></span>
             <button id="membership" class="badge  "><p>Resume membership</p></button>
             <span id="search"><svg width="40px" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Person Circle</title><path d="M258.9 48C141.92 46.42 46.42 141.92 48 258.9c1.56 112.19 92.91 203.54 205.1 205.1 117 1.6 212.48-93.9 210.88-210.88C462.44 140.91 371.09 49.56 258.9 48zm126.42 327.25a4 4 0 01-6.14-.32 124.27 124.27 0 00-32.35-29.59C321.37 329 289.11 320 256 320s-65.37 9-90.83 25.34a124.24 124.24 0 00-32.35 29.58 4 4 0 01-6.14.32A175.32 175.32 0 0180 259c-1.63-97.31 78.22-178.76 175.57-179S432 158.81 432 256a175.32 175.32 0 01-46.68 119.25z"/><path d="M256 144c-19.72 0-37.55 7.39-50.22 20.82s-19 32-17.57 51.93C191.11 256 221.52 288 256 288s64.83-32 67.79-71.24c1.48-19.74-4.8-38.14-17.68-51.82C293.39 151.44 275.59 144 256 144z"/></svg></span>
 
         </ul>
         </div>
-      </nav> -->
+      </nav>
   
 
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-lg-9">
                 <div class="card-container">
                     <div class="content-col">
                         <div class="row-top">
-                            <img class="logo-sm" src="https://miro.medium.com/fit/c/20/20/1*bPddtCe8_0Zq8-pF6YhmGw.jpeg" alt="artist logo">
+                            <img class="logo-sm" src="https://miro.medium.com/fit/c/20/20/1*bPddtCe8_0Zq8-pF6YhmGw.jpeg" alt="author logo">
                             <p class="author-name">Claudiu</p>
                         </div>
                         <p class="article title">What Banks Don't Want You To Know About Why Bitcoin Hasn't Crashed Yet</p>
@@ -273,11 +284,51 @@ left: -100px;
                     </div>
                     <img class="img-col" src="https://miro.medium.com/fit/c/200/134/0*BRKku3UJo7v_7Y85" alt="bitcoin with trading chart background">
                 </div>
+                <div class="card-container">
+                    <div class="content-col">
+                        <div class="row-top">
+                            <img class="logo-sm" src="https://cdn-images-1.medium.com/fit/c/36/36/1*UF0GCDhD8lBNGIrPbFfM4A.png" alt="author logo">
+                            <p class="author-name">Jenn Leach <span>in</span>The Side Hustle Club</p>
+                        </div>
+                        <p class="article title">I Made $100,000 Flipping Websites</p>
+                        <p class="article description">Website flipping was something I stumbled onto several years back. I was looking to exit my business that helped me quit my 9-to-5 job and move into a new industry.</p>
+                        <div class="row-bottom">
+                            <div class="detail-item">Nov 11</div><div class="dot">•</div>
+                            <div class="detail-item">4 min read</div><div class="dot">•</div>
+                            <button class="detail-item highlight">Website</button><div class="dot">•</div>
+                            <div class="detail-item history">Based on your reading history</div>
+                            <div class="div-icons">
+                                <i class="far fa-bookmark"></i>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="img-col" src="https://miro.medium.com/max/700/0*cLfKfHuyqLOeiRFN" alt="woman working outside on laptop">
+                </div>
+                <div class="card-container">
+                    <div class="content-col">
+                        <div class="row-top">
+                            <img class="logo-sm" src="https://miro.medium.com/fit/c/20/20/1*TyRLQdZO7NdPATwSeut8gg.png" alt="artist logo">
+                            <p class="author-name">Jose Granja <span>in</span> Better Programming</p>
+                        </div>
+                        <p class="article title">Will JetBrains Fleet Be a VSCode Killer?</p>
+                        <p class="article description">My first impressions of the new JetBrains tool</p>
+                        <div class="row-bottom">
+                            <div class="detail-item">Dec 8</div><div class="dot">•</div>
+                            <div class="detail-item">6 min read</div><div class="dot">•</div>
+                            <button class="detail-item highlight">Programming</button><div class="dot">•</div>
+                            <div class="detail-item history">Based on your reading history</div>
+                            <div class="div-icons">
+                                <i class="far fa-bookmark"></i>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="img-col" src="https://miro.medium.com/max/1400/1*GCT9mLLsgDp2wN0x7d2yLA.png" alt="jetbrains fleet logo against vs code logo">
+                </div>
             </div>
-            <div class="col-lg-3">
-                <div class="vertical">
-
-                    <div>
+            <div class="col-lg-3 d-xs-none">
+            
                 
                     <div id="rightSmall">
                         <svg  width="43px" height="24px" viewBox="0 0 256 146" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
@@ -307,6 +358,18 @@ left: -100px;
                         Connect to Twitter
                         
                     </button></div>
+
+                    <div class="recommended-items">
+                        <p>Recommended topics</p>
+                        <button class="highlight rec-item">Education</button>
+                        <button class="highlight rec-item">Psychology</button>
+                        <button class="highlight rec-item">Books</button>
+                        <button class="highlight rec-item">Health</button>
+                        <button class="highlight rec-item">Blockchain</button>
+                        <button class="highlight rec-item">Art</button>
+
+
+                    </div>
                 
                       </div>
                 </div>
@@ -316,7 +379,7 @@ left: -100px;
 
 
   
-
+<!-- 
 <div class="vertical">
 
     <div>
@@ -351,7 +414,7 @@ left: -100px;
     </button></div>
 
       </div>
-</div>
+</div> -->
 
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
